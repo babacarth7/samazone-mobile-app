@@ -34,7 +34,7 @@ export default function PlaceOrderScreen() {
         totalPrice,
       };
 
-      const response = await axios.post(`http://${API_URL}/api/order`, order);
+      const response = await axios.post(`https://samazone-server.onrender.com/api/order`, order);
       console.log(JSON.stringify(response));
       console.log(JSON.stringify(order));
       const orderIdFromResponse = response.data._id;
@@ -90,7 +90,7 @@ export default function PlaceOrderScreen() {
             }}
           >
             <Image
-              source={{ uri: `http://${API_URL}/images/${item.image}` }}
+              source={{ uri: `https://samazone-server.onrender.com/images/${item.image}` }}
               style={{ width: 80, height: 80, marginRight: 10 }}
             />
             <View style={{ flex: 1 }}>

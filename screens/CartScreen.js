@@ -52,7 +52,7 @@ export default function CartScreen() {
             >
               <Image
                 source={{
-                  uri: `http://${API_URL}/images/${item.image}`,
+                  uri: `https://samazone-server.onrender.com/images/${item.image}`,
                 }}
                 style={{ width: 80, height: 80, marginRight: 10 }}
               />

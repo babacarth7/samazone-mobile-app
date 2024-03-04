@@ -34,7 +34,7 @@ export default function LoginScreen() {
         password: password,
       };
 
-      const response = await axios.post(`http://${API_URL}/api/auth/login`, user);
+      const response = await axios.post(`https://samazone-server.onrender.com/api/auth/login`, user);
       const { token, isAdmin } = response.data;
 
       await AsyncStorage.setItem("token", token);

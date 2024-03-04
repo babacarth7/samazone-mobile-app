@@ -56,7 +56,7 @@ export default function AdminDashboardScreen() {
       try {
         dispatch({ type: "FETCH_REQUEST" });
         const token = await AsyncStorage.getItem("token");
-        const response = await axios.get(`http://${API_URL}/api/admin/summary`, {
+        const response = await axios.get(`https://samazone-server.onrender.com/api/admin/summary`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

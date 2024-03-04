@@ -18,7 +18,7 @@ export default function HomeScreen() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get(`http://${API_URL}/api/products`);
+        const response = await axios.get(`https://samazone-server.onrender.com/api/products`);
         console.log("Products:", JSON.stringify(response.data));
         setProducts(response.data);
       } catch (error) {

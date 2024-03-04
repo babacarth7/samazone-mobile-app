@@ -11,7 +11,7 @@ export default function ProfileScreen() {
 
   const handleLogout = async () => {
     try {
-      await axios.get(`http://${API_URL}/api/auth/logout`);
+      await axios.get(`https://samazone-server.onrender.com/api/auth/logout`);
       Alert.alert("Logout successfully", "You can log in again");
       await AsyncStorage.removeItem("token");
       navigation.replace("Login");

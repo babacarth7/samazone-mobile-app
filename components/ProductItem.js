@@ -50,7 +50,7 @@ export default function ProductItem({ product }) {
           resizeMode: "contain",
           borderRadius: 20,
         }}
-        source={{ uri: `http://${API_URL}/images/${product.image}` }}
+        source={{ uri: `https://samazone-server.onrender.com/images/${product.image}` }}
       />
       <Text
         style={{

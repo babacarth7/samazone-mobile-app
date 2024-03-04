@@ -82,7 +82,7 @@ export default function AdminProductsScreen() {
       try {
         dispatch({ type: "FETCH_REQUEST" });
         const token = await AsyncStorage.getItem("token");
-        const { data } = await axios.get(`http://${API_URL}/api/admin/products`, {
+        const { data } = await axios.get(`https://samazone-server.onrender.com/api/admin/products`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -108,7 +108,7 @@ export default function AdminProductsScreen() {
       }}
     >
       <Image
-        source={{ uri: `http://${API_URL}/images/${item.image}` }}
+        source={{ uri: `https://samazone-server.onrender.com/images/${item.image}` }}
         style={{
           width: "100%",
           height: 200,

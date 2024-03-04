@@ -31,7 +31,7 @@ export default function OrderHistoryScreen() {
     const fetchOrders = async () => {
       try {
         dispatch({ type: "FETCH_REQUEST" });
-        const { data } = await axios.get(`http://${API_URL}/api/orders`);
+        const { data } = await axios.get(`https://samazone-server.onrender.com/api/orders`);
 
         // Retrieve user's full name from AsyncStorage
         const fullName = await AsyncStorage.getItem("fullName");

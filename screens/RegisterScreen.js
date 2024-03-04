@@ -20,7 +20,7 @@ export default function RegisterScreen() {
 
     // send a POST  request to the backend API to register the user
     axios
-      .post(`http://${API_URL}/api/auth/register`, user)
+      .post(`https://samazone-server.onrender.com/api/auth/register`, user)
       .then((response) => {
         console.log(response);
         Alert.alert("Registration successful", "You have been registered Successfully");

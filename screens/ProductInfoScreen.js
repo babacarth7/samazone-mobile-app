@@ -56,7 +56,7 @@ export default function ProductInfoScreen({ route }) {
           alignSelf: "center",
           marginTop: 55,
         }}
-        source={{ uri: `http://${API_URL}/images/${product.image}` }}
+        source={{ uri: `https://samazone-server.onrender.com/images/${product.image}` }}
       />
       <View style={{ paddingHorizontal: 20, marginTop: 20 }}>
         <Text style={{ fontSize: 24, fontWeight: "bold", marginBottom: 10 }}>{product.name}</Text>

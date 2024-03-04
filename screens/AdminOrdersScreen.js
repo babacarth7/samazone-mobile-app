@@ -57,7 +57,7 @@ export default function AdminOrdersScreen() {
       try {
         dispatch({ type: "FETCH_REQUEST" });
         const token = await AsyncStorage.getItem("token");
-        const { data } = await axios.get(`http://${API_URL}/api/admin/orders`, {
+        const { data } = await axios.get(`https://samazone-server.onrender.com/api/admin/orders`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
