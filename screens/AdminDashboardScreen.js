@@ -76,6 +76,9 @@ export default function AdminDashboardScreen() {
 
   const handleOptionPress = (option) => {
     switch (option) {
+      case "Home":
+        navigation.navigate("Home");
+        break;
       case "Dashboard":
         navigation.navigate("AdminDashboard");
         break;
@@ -150,7 +153,7 @@ export default function AdminDashboardScreen() {
               zIndex: 1,
             }}
           >
-            {["Dashboard", "Orders", "Products", "Users"].map((option) => (
+            {["Home", "Dashboard", "Orders", "Products", "Users"].map((option) => (
               <Pressable
                 key={option}
                 onPress={() => handleOptionPress(option)}
